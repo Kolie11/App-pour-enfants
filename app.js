@@ -9,6 +9,8 @@ const btn2 = document.querySelector(".btn2");
 
 
 
+
+
 btn.addEventListener("click", () => {
   content.style.display = "block";
   btn.textContent="Prends du plaisir!"
@@ -27,6 +29,7 @@ btn2.addEventListener("click", () => {
 });
 
 document.addEventListener("keypress", (e) => {
+  title.style.visibility = "visible";
   colorResult.textContent = e.key;
   if (e.key === "a") {
     word.style.visibility = "visible";
@@ -87,9 +90,9 @@ document.addEventListener("keypress", (e) => {
   else if (e.key === "e") {
     word.style.visibility = "visible";
     word.style.backgroundColor = "#555D50";
-    word.style.color="black"
+    word.style.color="white"
     colorResult.style.backgroundColor = "#555D50";
-    colorResult.style.color = "black";
+    colorResult.style.color = "white";
     word.innerHTML = `
       <span>La lettre "E" a pour mot :</span>
       <p>"Ébène"</p>
@@ -99,9 +102,67 @@ document.addEventListener("keypress", (e) => {
 
   } 
   
+
+  //-----------f-----------------------
+
+  else if (e.key === "f") {
+    word.style.visibility = "visible";
+    word.style.backgroundColor = "#c72c48";
+    word.style.color="white"
+    colorResult.style.backgroundColor = "#c72c48";
+    colorResult.style.color = "white";
+    word.innerHTML = `
+      <span>La lettre "F" a pour mot :</span>
+      <p>"Fleur"</p>
+      <p>"et pour couleur : Framboise"</p>
+    `;
+    def.textContent = "Une fleur est la partie colorée d'une plante. Elle pousse souvent sur une tige et a des pétales colorés. Les fleurs sont belles à regarder et sentent bon.";
+
+  } 
+
+  //--------------g------------
+
+
+
+  else if (e.key === "g") {
+    word.style.visibility = "visible";
+    word.style.backgroundColor = " #808080";
+    word.style.color="white"
+    colorResult.style.backgroundColor = " #808080";
+    colorResult.style.color = "white";
+    word.innerHTML = `
+      <span>La lettre "G" a pour mot :</span>
+      <p>"Gris"</p>
+      <p>"et pour couleur : Gris"</p>
+    `;
+    def.textContent = "Le gris est une couleur qui se trouve entre le noir et le blanc. C'est comme la couleur des nuages quand il va pleuvoir ou la couleur de certains animaux comme les éléphants et les souris.";
+
+  } 
+
+
+  //----------------h-------------------------------
+
+
+  else if (e.key === "h") {
+    word.style.visibility = "visible";
+    word.style.backgroundColor = " #6C4F3D";
+    word.style.color="white"
+    colorResult.style.backgroundColor = " #6C4F3D";
+    colorResult.style.color = "white";
+    word.innerHTML = `
+      <span>La lettre "H" a pour mot :</span>
+      <p>"Hélicoptère"</p>
+      <p>"et pour couleur : Harmonie"</p>
+    `;
+    def.textContent = "Un hélicoptère est un incroyable engin volant qui ressemble à un gros jouet. Imagine un gros jouet avec des rotors qui tournent au-dessus.";
+
+  } 
+
   
   else {
     colorResult.textContent = "tu as appuyé sur la mauvaise touche.";
+    // colorResult.innerHTML="<img src='/assets/non.gif' />";
     colorResult.style.backgroundColor = "red";
+    
   }
 });

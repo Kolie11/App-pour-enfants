@@ -15,18 +15,22 @@ body {
   font-family: "poppins";
 }
 .main-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   background: white;
   text-align: center;
   padding: 25px;
   /* height: 70vh; */
  border-radius: 5px;
  margin-top: 160px;
+ box-shadow: 5px 5px 2px #00000070;
 }
 .main-content #btn {
   outline: none;
-  color: aliceblue;
+  color: #fff;
   padding: 10px;
-  background: teal;
+  background: #52B2CF;
   font-size: 1.2rem;
   cursor: pointer;
   border: none;
@@ -38,15 +42,16 @@ body {
 .main-content h1 {
   font-family: "poppins", sans-serif;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1rem;
+  background-color: #D4AFB9;
+  padding: 5px;
 }
 
 .content{
     /* visibility: hidden; */
     display: none;
     transition: 3s ease-in-out;
-  
 }
 
 .content h4{
@@ -65,33 +70,44 @@ body {
   visibility: hidden;
   transition: 1s ease-in;
   text-align: center;
+border-radius: 15px;
 }
 
-/* .content h3{
-  border-radius: 50%;
-} */
+.content #title{
+ visibility: hidden;
+}
 
 .content .color-result{
   padding: 10px;
-  border-radius: 25%;
+  border-radius: 25px;
 }
 .btn2{
   border: none;
-  background: teal;
+  background: #4281A4;
   padding: 10px;
-  color: wheat;
+  color: #f1f1f1;
   font-size: 1.2rem;
   margin-top: 10px;
   cursor: pointer;
+  border-radius: 5px;
+  transition: 2s ease;
+}
+
+.btn2:hover{
+
+  transform: scale(0.5);
 }
 
 .def{
   width: 400px;
   height: 120px;
-  background-color: green;
+  background-color: #618985;
   margin-top: 10px;
   display: none;
   text-align: center;
   padding: 5px;
-  /* color: white; */
+  color: white;
+  border-radius: 15px;
+  box-shadow: 5px 5px #a1a1a1;
+  overflow: hidden;
 }
