@@ -14,17 +14,51 @@ body {
   justify-content: center;
   font-family: "poppins";
 }
+
+/* //---------Database for the languages---------// */
+
+
+
+
 .main-content {
+  width: 70vh;
   display: flex;
   align-items: center;
   flex-direction: column;
   background: white;
   text-align: center;
   padding: 25px;
-  /* height: 70vh; */
  border-radius: 5px;
  margin-top: 160px;
  box-shadow: 5px 5px 2px #00000070;
+ flex-wrap: wrap;
+}
+.main-content #btn-container{
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  gap: 25px;
+  border-radius: 50%;
+}
+
+.main-content #btn-container img{
+  width: 30px;
+  object-fit: cover;
+}
+ 
+#btn-container button{
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px dashed ;
+}
+
+
+.main-content.active{
+  background-color: #84DCC6;
+}
+.main-content:hover.active{
+  background-color: #84DCC6;
 }
 .main-content #btn {
   outline: none;
@@ -95,7 +129,7 @@ border-radius: 15px;
 
 .btn2:hover{
 
-  transform: scale(0.5);
+  transform: scale(0.9);
 }
 
 .def{
